@@ -1,0 +1,213 @@
+/************************************************
+*             Configuraçoes gerais              *
+*************************************************/
+body{
+  font-family: "Roboto";
+  background-color: #fafafa;
+}
+
+/************************************************
+*                 menu topo                     *
+*************************************************/
+.menuTopo {
+    height: 54px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;  
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .logos{
+    display: flex;
+    align-items: center;
+  }
+/************************************************
+*            menu  topo da esquerda             *
+*************************************************/
+  .camera, .logoInstagram img{
+    height: 30px;
+    width: 30px;
+  }
+  .logoInstagram img{
+    margin-top: 10px;
+  }
+  a { 
+    color: inherit; 
+  } 
+ 
+  .logoInstagram img{
+    height: 29px;
+    width: 103px;
+  }
+  .barraVertical{
+    height: 25px;
+    width: 1px;
+    margin: 10px;
+    
+    background-color: #DBDBDB;
+  }
+  
+/************************************************
+*                barra de pesquisa              *
+*************************************************/
+  .caixaPesquisa{
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+  }
+  .pesquisa{
+    height: 100%;
+    width: 100%;
+    left: 575px;
+    top: 14px;
+    height: 100%;
+    width: 100%;
+}
+#pesquisa{
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color:#979797;
+  padding: 7px;
+  border: solid 1px ;
+  border-radius: 5px;
+  background-color:rgb(250, 250, 250);
+}
+/************************************************
+*             Menu topo da direita              *
+*************************************************/
+.menuTopoDireita{
+  height: 40px;
+  width: 200px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+/************************************************
+*                     main                      *
+*************************************************/
+.main{
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+/************************************************
+*                     status                    *
+*************************************************/
+.wrapper{
+    width: 70%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px;
+}
+.colunaEsquerda{
+  display: flex;
+  flex-direction: column;
+}
+.statusWrapper{
+  width: 100%;
+  height: 120px;
+  background: #fff; 
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  padding: 10px;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.statusWrapper::-webkit-scrollbar{
+  display: none;
+}
+.cartoesDeStatus{
+  flex: 0 0 auto;
+  width: 80px;
+  max-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+.fotoDePerfil{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 3px;
+  background:  linear-gradient(45seg, rgb(255,230,0),rgb(255,0,128) 80%);
+}
+.fotoDePerfil img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.fotoDePerfil{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 3px;
+  background: linear-gradient(45seg, rgb(255,230,0),rgb(255,0,128) 80%);
+}
+.fotoDePerfil img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.username{
+  width:100%;
+  overflow:hidden;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.post{
+  width: 100%;
+  height: 600px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  margin-top: 40px;
+}
+/************************************************
+*                     feed                      *
+*************************************************/
+.info{
+  width:100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.info .username{
+  width: auto;
+  font-weight: bold;
+  color:#000;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.info .user{
+  display: flex;
+  align-items: center;
+}
+.info .fotoDePerfil{
+  height: 40px;
+  width: 40px;
+  paddinf: 0;
+  background: none;
+}
