@@ -1,107 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-  <title>Instagram</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href= "reset.css"/>"
-  <link rel="stylesheet" href= "styles.css"/>"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="reset.css" />
 
-  <title>Document</title>
+  <!--Roboto fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/tela2/favicon-16x16.png">
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>instagram</title>
 </head>
-<body>
-  <header class="menuTopo">
-    <div class="logos"> 
-      <div class="camera">
-        <a href= "#">
-          <ion-icon name="logo-instagram" size = "large"></ion-icon>
-        </a>
-      </div>
-      <div class="barraVertical"></div>
-      <div class="logoInstagram">
-        <a href= "#">
-         <img src = "arquivos/logo.png"/>
-        </a>
-      </div>
-    </div>
-    <div class = "caixaPesquisa">
-      <nav class="pesquisa">
-          <input type="text" id = "pesquisa"  placeholder="Pesquisar..." title="Digite sua pesquisa"> 
-      </nav>
-    </div>
-    <div class="barraDePesquisa"></div>
-    <div class="menuConfiguracoes"></div>
-    
 
-    <div class="menuTopoDireita"> 
-      <div> <a href= "#">
-        <ion-icon name="paper-plane-outline" size = "large"></ion-icon>
+<body>
+  <nav class="navbar">
+    <nav class="nav-wrapper">
+      <div class="logos">
+        <div class="camera-logo">
+          <img src="assets/img/camera.png" alt="brand-camera" class="brand-camera">
+          <div class="vertical-bar"></div>
+        </div>
+        <img src="assets/img/logo.png" class="brand-img" alt="logo-img">
       </div>
-      <div> <a href= "#">
-        <ion-icon name="compass-outline" size = "large"></ion-icon></a>
+      <input type="text" class="search-box" placeholder="pesquisar">
+      <div class="nav-itens">
+        <img src="assets/img/messenger.png" class="icon" alt="">
+        <div class="sub-icons">
+          <img src="assets/img/bussola.png" class="icon" alt="">
+          <img src="assets/img/like.png" class="icon" alt="">
+          <img src="assets/img/person.png" class="icon" alt="">
+        </div>
+
+        <!-- <div class="icon user-profile"></div> -->
       </div>
-      <div> <a href= "#">
-        <ion-icon name="heart-outline" size = "large"></ion-icon></a>
-      </div>
-      <div> <a href= "#">
-        <ion-icon name="person-outline" size = "large"></ion-icon></a>
-      </div>
-    </div>
-  </header>
-  <section class= "main">
+    </nav>
+  </nav>
+  <section class="main">
     <div class="wrapper">
-      <div class="colunaEsquerda">
-        <div class="statusWrapper">
-          <div class="cartoesDeStatus">
-            <div class="fotoDePerfil"><img src="arquivos/teste.jpeg"></div>
-            <p class="username">user-name1</p>
+      <div class="left-col">
+        <div class="status-wrapper">
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n1.svg" alt="profile-pic"></div>
+            <p class="username">unsername1</p>
           </div>
-          <div class="cartoesDeStatus">
-            <div class="fotoDePerfil"><img src="arquivos/teste.jpeg"></div>
-            <p class="username">user-name2</p>
-          </div> <div class="cartoesDeStatus">
-            <div class="fotoDePerfil"><img src="arquivos/teste.jpeg"></div>
-            <p class="username">user-name3</p>
-          </div> <div class="cartoesDeStatus">
-            <div class="fotoDePerfil"><img src="arquivos/teste.jpeg"></div>
-            <p class="username">user-name4</p>
-          </div> <div class="cartoesDeStatus">
-            <div class="fotoDePerfil"><img src="arquivos/teste.jpeg"></div>
-            <p class="username">user-name5</p>
-          </div> <div class="cartoesDeStatus">
-            <div class="fotoDePerfil"><img src="arquivos/teste.jpeg"></div>
-            <p class="username">user-name6</p>
-          </div> <div class="cartoesDeStatus">
-            <div class="fotoDePerfil"><img src="arquivos/teste.jpeg"></div>
-            <p class="username">user-name7</p>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n2.svg" alt="profile-pic"></div>
+            <p class="username">unser2</p>
+          </div>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n3.svg" alt="profile-pic"></div>
+            <p class="username">unser3</p>
+          </div>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n4.svg" alt="profile-pic"></div>
+            <p class="username">unsername4</p>
+          </div>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n5.svg" alt="profile-pic"></div>
+            <p class="username">unsername5</p>
+          </div>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n6.svg" alt="profile-pic"></div>
+            <p class="username">unsername6</p>
+          </div>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n7.svg" alt="profile-pic"></div>
+            <p class="username">unsername7</p>
+          </div>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n8.svg" alt="profile-pic"></div>
+            <p class="username">unsername8</p>
+          </div>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n9.svg" alt="profile-pic"></div>
+            <p class="username">unsername9</p>
+          </div>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n10.svg" alt="profile-pic"></div>
+            <p class="username">unsername10</p>
+          </div>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n11.svg" alt="profile-pic"></div>
+            <p class="username">unsername11</p>
+          </div>
+          <div class="status-card">
+            <div class="profile-pic"><img src="assets/img/n12.svg" alt="profile-pic"></div>
+            <p class="username">unsername11</p>
           </div>
         </div>
- 
+
         <div class="post">
           <div class="info">
             <div class="user">
-              <div class="fotoDePerfil"><img src = "arquivos/ronaldinho.jpeg"></div>
-              <p class= "username">ronaldinho gaucho</p>
+              <div class="profile-pic"><img src="assets/img/n2.svg" alt="profile-pic"></div>
+              <p class="username">User1</p>
             </div>
-            <img src="" class="opcoes" alt=""></img>
+            <img src="assets/img/options.png" alt="options" class="options">
+          </div>
+          <img src="assets/img/b1.png" alt="post-image" class="post-image">
+          <div class="post-content">
+            <div class="reaction-wrapper">
+              <img src="assets/img/like.png" alt="" class="icon">
+              <img src="assets/img/comment.png" alt="" class="icon">
+              <img src="assets/img/send.png" alt="" class="icon">
+              <img src="assets/img/save.png" alt="" class="icon save">
+            </div>
+            <p class="likes">8,785 cutidas</p>
+            <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              ipsa tempore incidunt porro? Similique rerum labore cum sint atque suscipit modi dignissimos unde cumque
+              velit, praesentium cupiditate sed quam facere nihil! Quae ipsum magni inventore. Dolore vel voluptatum
+              tempora!</p>
+            <p class="post-time">5 horas atrás </p>
+          </div>
+          <div class="comment-wrapper">
+            <img src="assets/img/smile.png" alt="icon-smile" class="icon">
+            <input type="text" class="comment-box" placeholder="adicione um comentário...">
+            <button class="comment-btn">publicar</button>
+          </div>
+        </div>
+        <div class="post">
+          <div class="info">
+            <div class="user">
+              <div class="profile-pic"><img src="assets/img/n3.svg" alt="profile-pic"></div>
+              <p class="username">User2</p>
+            </div>
+            <img src="assets/img/options.png" alt="options" class="options">
+          </div>
+          <img src="assets/img/b2.jpg" alt="post-image" class="post-image">
+          <div class="post-content">
+            <div class="reaction-wrapper">
+              <img src="assets/img/like.png" alt="" class="icon">
+              <img src="assets/img/comment.png" alt="" class="icon">
+              <img src="assets/img/send.png" alt="" class="icon">
+              <img src="assets/img/save.png" alt="" class="icon save">
+            </div>
+            <p class="likes">8,785 cutidas</p>
+            <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              ipsa tempore incidunt porro? Similique rerum labore cum sint atque suscipit modi dignissimos unde cumque
+              velit, praesentium cupiditate sed quam facere nihil! Quae ipsum magni inventore. Dolore vel voluptatum
+              tempora!</p>
+            <p class="post-time">5 horas atrás </p>
+          </div>
+          <div class="comment-wrapper">
+            <img src="assets/img/smile.png" alt="icon-smile" class="icon">
+            <input type="text" class="comment-box" placeholder="adicione um comentário...">
+            <button class="comment-btn">publicar</button>
+          </div>
+        </div>
+        <div class="post">
+          <div class="info">
+            <div class="user">
+              <div class="profile-pic"><img src="assets/img/n4.svg" alt="profile-pic"></div>
+              <p class="username">User2</p>
+            </div>
+            <img src="assets/img/options.png" alt="options" class="options">
+          </div>
+          <img src="assets/img/b3.jpeg" alt="post-image" class="post-image">
+          <div class="post-content">
+            <div class="reaction-wrapper">
+              <img src="assets/img/like.png" alt="" class="icon">
+              <img src="assets/img/comment.png" alt="" class="icon">
+              <img src="assets/img/send.png" alt="" class="icon">
+              <img src="assets/img/save.png" alt="" class="icon save">
+            </div>
+            <p class="likes">8,785 cutidas</p>
+            <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              ipsa tempore incidunt porro? Similique rerum labore cum sint atque suscipit modi dignissimos unde cumque
+              velit, praesentium cupiditate sed quam facere nihil! Quae ipsum magni inventore. Dolore vel voluptatum
+              tempora!</p>
+            <p class="post-time">5 horas atrás </p>
+          </div>
+          <div class="comment-wrapper">
+            <img src="assets/img/smile.png" alt="icon-smile" class="icon">
+            <input type="text" class="comment-box" placeholder="adicione um comentário...">
+            <button class="comment-btn">publicar</button>
+          </div>
+        </div>
+        <div class="post">
+          <div class="info">
+            <div class="user">
+              <div class="profile-pic"><img src="assets/img/n5.svg" alt="profile-pic"></div>
+              <p class="username">User3</p>
+            </div>
+            <img src="assets/img/options.png" alt="options" class="options">
+          </div>
+          <img src="assets/img/b4.jpg" alt="post-image" class="post-image">
+          <div class="post-content">
+            <div class="reaction-wrapper">
+              <img src="assets/img/like.png" alt="" class="icon">
+              <img src="assets/img/comment.png" alt="" class="icon">
+              <img src="assets/img/send.png" alt="" class="icon">
+              <img src="assets/img/save.png" alt="" class="icon save">
+            </div>
+            <p class="likes">8,785 cutidas</p>
+            <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              ipsa tempore incidunt porro? Similique rerum labore cum sint atque suscipit modi dignissimos unde cumque
+              velit, praesentium cupiditate sed quam facere nihil! Quae ipsum magni inventore. Dolore vel voluptatum
+              tempora!</p>
+            <p class="post-time">5 horas atrás </p>
+          </div>
+          <div class="comment-wrapper">
+            <img src="assets/img/smile.png" alt="icon-smile" class="icon">
+            <input type="text" class="comment-box" placeholder="adicione um comentário...">
+            <button class="comment-btn">publicar</button>
+          </div>
+        </div>
+        <div class="post">
+          <div class="info">
+            <div class="user">
+              <div class="profile-pic"><img src="assets/img/n5.svg" alt="profile-pic"></div>
+              <p class="username">User4</p>
+            </div>
+            <img src="assets/img/options.png" alt="options" class="options">
+          </div>
+          <img src="assets/img/b5.jpeg" alt="post-image" class="post-image">
+          <div class="post-content">
+            <div class="reaction-wrapper">
+              <img src="assets/img/like.png" alt="" class="icon">
+              <img src="assets/img/comment.png" alt="" class="icon">
+              <img src="assets/img/send.png" alt="" class="icon">
+              <img src="assets/img/save.png" alt="" class="icon save">
+            </div>
+            <p class="likes">8,785 cutidas</p>
+            <p class="description"><span>username</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              ipsa tempore incidunt porro? Similique rerum labore cum sint atque suscipit modi dignissimos unde cumque
+              velit, praesentium cupiditate sed quam facere nihil! Quae ipsum magni inventore. Dolore vel voluptatum
+              tempora!</p>
+            <p class="post-time">5 horas atrás </p>
+          </div>
+          <div class="comment-wrapper">
+            <img src="assets/img/smile.png" alt="icon-smile" class="icon">
+            <input type="text" class="comment-box" placeholder="adicione um comentário...">
+            <button class="comment-btn">publicar</button>
           </div>
         </div>
 
       </div>
-      <div class="colunaDireita">
-
+      <div class="right-col">
+        <div class="profile-card">
+          <div class="profile-pic">
+            <img src="assets/img/n1.svg" alt="profile-pic">
+          </div>
+          <div>
+            <p class="username">fulaninho.silva</p>
+            <p class="sub-text">Fulaninho Silva</p>
+          </div>
+          <button class="action-btn">Mudar</button>
+        </div>
+        <p class="suggestion-text">Sugestões para você</p>
+        <div class="profile-card">
+          <div class="profile-pic">
+            <img src="assets/img/n14.jpeg" alt="profile-pic">
+          </div>
+          <div>
+            <p class="username">fulaninho.silva</p>
+            <p class="sub-text">Seguido por @blabla</p>
+          </div>
+          <button class="action-btn">follow</button>
+        </div>
+        <div class="profile-card">
+          <div class="profile-pic">
+            <img src="assets/img/n15.jpeg" alt="profile-pic">
+          </div>
+          <div>
+            <p class="username">fulaninho.silva</p>
+            <p class="sub-text">Sugestões para você</p>
+          </div>
+          <button class="action-btn">follow</button>
+        </div>
+        <div class="profile-card">
+          <div class="profile-pic">
+            <img src="assets/img/n16.jpeg" alt="profile-pic">
+          </div>
+          <div>
+            <p class="username">fulaninho.silva</p>
+            <p class="sub-text">Seguido por @bla</p>
+          </div>
+          <button class="action-btn">follow</button>
+        </div>
+        <div class="profile-card">
+          <div class="profile-pic">
+            <img src="assets/img/n17.jpeg" alt="profile-pic">
+          </div>
+          <div>
+            <p class="username">fulaninho.silva</p>
+            <p class="sub-text">Sugestões para você</p>
+          </div>
+          <button class="action-btn">follow</button>
+        </div>
+        <div class="profile-card">
+          <div class="profile-pic">
+            <img src="assets/img/n18.jpeg" alt="profile-pic">
+          </div>
+          <div>
+            <p class="username">fulaninho.silva</p>
+            <p class="sub-text">Sugestões para você</p>
+          </div>
+          <button class="action-btn">follow</button>
+        </div>
       </div>
+
     </div>
   </section>
-  <aside class="aside"></aside>
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <nav class="navbar-bottom">
+    <nav class="nav-wrapper">
+      <img src="assets/img/house.png" class="icon" alt="">
+      <img src="assets/img/lupa.png" class="icon" alt="">
+      <img src="assets/img/pluz.png" class="icon" alt="">
+      <img src="assets/img/like.png" class="icon" alt="">
+      <img src="assets/img/person.png" class="icon" alt="">
+      </div>
+    </nav>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
+<html>
+
+</html>
+
 </html>
